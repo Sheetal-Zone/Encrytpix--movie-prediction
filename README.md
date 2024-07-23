@@ -10,10 +10,10 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import OrdinalEncoder
 import matplotlib.pyplot as plt
 
-with open('C:/Users/shiva/OneDrive/Desktop/internship encryptix/MOVIE RATING PREDICTION/IMDb Movies India.csv', 'rb') as f:
+with open('C:/Users/shiva/OneDrive/Desktop/encriptyx projects\MOVIE RATING PREDICTION\IMDb Movies India.csv', 'rb') as f:
     result = chardet.detect(f.read())
 charenc = result['encoding']
-df = pd.read_csv('C:/Users/shiva/OneDrive/Desktop/internship encryptix/MOVIE RATING PREDICTION/IMDb Movies India.csv', encoding=charenc)
+data = pd.read_csv(r"C:\Users\DELL\OneDrive\Desktop\encriptyx projects\MOVIE RATING PREDICTION\IDMB Movies India.csv")
 
 df.dropna(inplace=True)
 print(df.columns)
